@@ -29,7 +29,7 @@ export default function Card() {
         <h2>카드로 보기</h2>
       </button>
       <button onClick={() => setCardView(false)}>
-        <h2>테이블로 보기</h2>
+        <h2>테이블로 보기11</h2>
       </button>
 
       {cardView ? (
