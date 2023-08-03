@@ -3,17 +3,30 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="navbar">
+    <div>
+      <div className="navbar">
       <Link to="/">
-        <button>home</button>
+        <button>로그인</button>
       </Link>
-      <Link to="/blogs">
-        <button>blog</button>
+      <Link to="/join">
+        <button>회원가입</button>
       </Link>
-      {/* <Link to="/menu">
-        <button>menu</button>
-      </Link> */}
+      <Link to="/reserve_check">
+        <button>예약조회</button>
+      </Link>
+      </div>
+      <div className="content">
+          <ul>
+            <Link to="/test">
+              <li>text</li>
+            </Link>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+      </div>
     </div>
+   
   );
 }
 
