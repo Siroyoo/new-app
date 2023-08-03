@@ -5,7 +5,7 @@ import "./css/App.css";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Reserve_check from "./pages/Reserve_check";
+import ReserveCheck from "./pages/ReserveCheck";
 import Join from "./pages/Join";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <div className="continer">
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/reserve_check" exact element={<Reserve_check />} />
+            <Route path="/reserve_check" exact element={<ReserveCheck />} />
             <Route path="/join" exact element={<Join />} />
             {/* <Route path="/menu" exact element={<Menu />} /> */}
           </Routes>
