@@ -7,17 +7,22 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ReserveCheck from "./pages/ReserveCheck";
 import Join from "./pages/Join";
+import Login from "./pages/Login";
+import Test from "./pages/Test";
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
-        <div className="continer">
+        <div className="container">
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/reserve_check" exact element={<ReserveCheck />} />
             <Route path="/join" exact element={<Join />} />
+            <Route path="/login" exact element={<Login/>}/>
+            <Route path="/test" exact element={<Test/>}/>
             {/* <Route path="/menu" exact element={<Menu />} /> */}
           </Routes>
         </div>

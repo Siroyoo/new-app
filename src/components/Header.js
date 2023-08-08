@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <div className="navbar">
-      <Link to="/">
+      <Link to="/login">
         <button>로그인</button>
       </Link>
       <Link to="/join">
@@ -15,17 +15,28 @@ export default function Header() {
         <button>예약조회</button>
       </Link>
       </div>
-      <div className="content">
-          <ul>
-            <Link to="/test">
-              <li>text</li>
+      <div className="logo">
+        <Link to="/" style={{textDecorationLine:"none"}}>
+          <h1>Nest Hotel</h1>
+        </Link>
+      </div>
+      <div >
+          <ul className="content">
+            <Link to="/test"style={{textDecorationLine:"none"}}>
+              <li>HOTLE</li>
             </Link>
-            <li>text</li>
-            <li>text</li>
-            <li>text</li>
+            <Link to="/test"style={{textDecorationLine:"none"}}>
+              <li>RESERVATION</li>
+            </Link>
+            <Link to="/test"style={{textDecorationLine:"none"}}>
+              <li>ROOM</li>
+            </Link>
+            <Link to="/test"style={{textDecorationLine:"none"}}>
+              <li>FACILITY</li>
+            </Link>
           </ul>
       </div>
-    </div>
+    </header>
    
   );
 }

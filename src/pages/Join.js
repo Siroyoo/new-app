@@ -1,7 +1,13 @@
 import React from 'react'
+import PauseOnHover from '../components/PauseOnHOver'
 
 export default function Join() {
   return (
-    <div>J</div>
+    <div>
+      <section>
+      <PauseOnHover/>
+      </section>
+      
+    </div>
   )
 }
