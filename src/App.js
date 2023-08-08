@@ -6,9 +6,10 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ReserveCheck from "./pages/ReserveCheck";
-import Join from "./pages/Join";
 import Login from "./pages/Login";
 import Test from "./pages/Test";
+import Member from "./pages/Member";
+
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/reserve_check" exact element={<ReserveCheck />} />
-            <Route path="/join" exact element={<Join />} />
+            <Route path="/member" exact element={<Member/>}/>
             <Route path="/login" exact element={<Login/>}/>
             <Route path="/test" exact element={<Test/>}/>
             {/* <Route path="/menu" exact element={<Menu />} /> */}

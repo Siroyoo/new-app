@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "../css/PauseOnHover.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
 
 
+export default function  PauseOnHover() {
 
-export default class PauseOnHover extends Component {
-  render() {
-    var settings = {
+    const settings = {
       dots: true,
       infinite: true,
       slidesToShow: 3,
@@ -17,60 +17,39 @@ export default class PauseOnHover extends Component {
       autoplaySpeed: 2000,
       pauseOnHover: true
     };
+    const [room, setroom] = useState([]);
+    const getRoom = async () => {
+      axios
+        .get("http://localhost:8082/room")
+        .then((res) => {
+          setroom(res.data);
+          console.log(res.data);
+          console.log(res);
+        })
+        .catch((err)=> {
+          console.log(err);
+        });
+    };
+    useEffect(()=> {
+      getRoom();
+    }, []);
+    console.log(room);
+    
     return (
         <div>
         <h2>&nbsp;ROOM&nbsp;</h2>
         <Slider {...settings}>
-          <div>
-          <div className="room">
-              <div className="warp">
-                <div className="room1">
-                  <img src="img/room1.jpg" alt="room1" />
-                </div>
-                <h3>스위트 룸</h3>
+          {room.map((ro, idx)=> (
+            <div className="room" key={idx}>
+            <div className="warp">
+              <div className="room1">
+              <img src={ro.img} alt="room1" />
               </div>
-            </div>
+              <h3>{ro.name}</h3>
+              </div>
           </div>
-          <div>
-          <div className="room">
-              <div className="warp">
-                <div className="room1">
-                  <img src="img/room2.jpg" alt="room1" />
-                </div>
-                <h3>패밀리 룸</h3>
-              </div>
-            </div>
-          </div>
-          <div>
-          <div className="room">
-              <div className="warp">
-                <div className="room1">
-                  <img src="img/room3.jpg" alt="room1" />
-                </div>
-                <h3>싱글 룸</h3>
-              </div>
-            </div>
-          </div>
-          <div>
-          <div className="room">
-              <div className="warp">
-                <div className="room1">
-                  <img src="img/room4.jpg" alt="room1" />
-                </div>
-                <h3>더블 룸</h3>
-              </div>
-            </div>
-          </div>
-          <div className="room">
-              <div className="warp">
-                <div className="room1">
-                  <img src="img/room5.jpg" alt="room1" />
-                </div>
-                <h3>스텐다드 룸</h3>
-              </div>
-            </div>
+        ))}
         </Slider>
       </div>
     );
   }
-}

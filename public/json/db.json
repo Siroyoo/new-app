@@ -54,5 +54,22 @@
       "content": "ㅁㄴㅇㅁㄴ",
       "id": 118
     }
-  ]
+  ],
+  "room" : [
+    {
+        "id" : 1, "img" : "img/room1.jpg", "name": "스위트 룸"
+    },
+    {
+        "id" : 2, "img" : "img/room2.jpg", "name": "패밀리 룸"
+    },
+    {
+        "id" : 3, "img" : "img/room3.jpg", "name": "싱글 룸"
+    },
+    {
+        "id" : 4, "img" : "img/room4.jpg", "name": "더블 룸"
+    },
+    {
+        "id" : 5, "img" : "img/room5.jpg", "name": "스텐다드 룸"
+    }
+]
 }

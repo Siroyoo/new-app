@@ -8,7 +8,7 @@ export default function Header() {
       <Link to="/login">
         <button>로그인</button>
       </Link>
-      <Link to="/join">
+      <Link to="/member">
         <button>회원가입</button>
       </Link>
       <Link to="/reserve_check">
