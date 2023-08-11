@@ -20,6 +20,10 @@ footer{
   width: 100%;
   z-index: 99999999999;
 }
+section{
+  width: 100%;
+  height: 60rem;
+}
 .navbar {
   position: static;
   display: flex;
@@ -89,10 +93,7 @@ footer{
 .backimg img{
   width: 100%;
   height: 100%;
-}
-section{
-  width: 100%;
-  height: 60rem;
+  object-fit: cover;
 }
 .f-con{
   display: flex;

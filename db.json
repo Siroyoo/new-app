@@ -19,20 +19,6 @@
       "year": 2
     }
   ],
-  "menu": [
-    {
-      "name": "짜장면",
-      "price": 5000
-    },
-    {
-      "name": "짬뽕",
-      "price": 6000
-    },
-    {
-      "name": "탕수육",
-      "price": 12000
-    }
-  ],
   "blogs": [
     {
       "title": "ㅁㄴㅇㅁㄴㅇㅁㄴㅇ",
@@ -71,5 +57,36 @@
     {
         "id" : 5, "img" : "img/room5.jpg", "name": "스텐다드 룸"
     }
-]
+  ],
+  "facility" : [
+    {
+      "id" : 1, "img" : "img/bar.jpg", "name" : "럭셔리 바"
+    },
+    {
+      "id" : 2, "img" : "img/buffe3.jpg", "name" : "뷔페"
+    },
+    {
+      "id" : 3, "img" : "img/canoe2.jpg", "name" : "카누 체험"
+    },
+    {
+      "id" : 4, "img" : "img/riding.jpg", "name" : "승마 체험"
+    },
+    {
+      "id" : 5, "img" : "img/oilemassage.jpg", "name" : "오일 마사지"
+    },
+    {
+      "id" : 6, "img" : "img/fitness.jpg", "name" : "피트니스"
+    },
+    {
+      "id" : 7, "img" : "img/insidepool.jpg", "name" : "실내 스파"
+    },
+    {
+      "id" : 8, "img" : "img/facility4.jpg", "name" : "취미 공간"
+    }
+  ],
+  "reserve" : [
+    {
+      "id" : 1
+    }
+  ]
 }

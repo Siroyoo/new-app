@@ -6,7 +6,6 @@ export default function Member() {
     <>
         <section>
             <h2>member</h2>
-            <PauseOnHover/>
         </section>
     </>
   );
