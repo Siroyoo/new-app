@@ -13,7 +13,7 @@
 .warp{
     width: 100%;
     height: 500px;
-    border: 2px solid #ddd;
+    border: 2px solid #ebddcc;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -39,5 +39,5 @@
     margin-top: 50px;
     padding: 0 10% 0 10%;
     width: 100%;
-    height: 30rem;
+    height: 15rem;
 }
